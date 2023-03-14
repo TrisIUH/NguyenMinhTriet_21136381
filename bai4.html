@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0 auto; 
+            padding: 0;
+        }
+        .wrapper{
+            height: 680px;
+            width: 923px;
+            background-color: aqua;
+            border: 1px solid black;
+        }
+        header{
+            height: 60px;
+            width: 100%;
+            background-color: rgba(172,75,22,255);
+            text-shadow: -8px -3px 4px rgba(206,206,206,0.62);
+            color:#817d04;
+            font-size: 25px;
+        }
+        nav{
+            height: 20px;
+            width: 100%;
+            background-color: #fff;
+            border-top: 1px solid black;
+            border-bottom: 1px solid black;
+            text-decoration: none;
+        }
+        nav ul{
+            text-decoration: none;
+            color: rgba(172,75,22,255);        
+        }
+        nav ul li{
+            display: inline-block;
+            position: relative;
+        }
+        nav ul li a{
+            color: #be9879;
+            text-decoration: none;
+            margin-left: 20px;
+        }
+        nav ul li:hover a{
+            background-color: powderblue;
+        }
+
+        nav ul li ul{
+            width: 100px;
+            display: none;
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            text-align: left;
+            background-color: powderblue;
+        }
+        nav ul li:hover ul {
+            display: inline-block;
+            color: #be9879;
+            margin-top: 10px;
+            width: 180px;
+        }
+        nav ul li ul li a {
+            display: inline-block;
+            padding: 10px;
+            color: #be9879;
+            text-decoration: none;
+        }
+        .content{
+            height: 550px;
+            width: 100%;
+            background-color: white;
+        }
+        .left{
+            width: 553px;
+            float:left;
+            padding-right: 30px;
+            border-right: 1px solid grey;
+            padding-top: 30px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        .right{
+            width: 300px;
+            float:left;
+        }
+        button{ 
+            margin: 30px 30px ; padding: 2px 20px;
+        }
+        input {
+        border: none;
+        border-bottom: 1px solid black;
+        margin: 10px;
+        size: 15px;
+        }
+        
+        .border{
+            height: 160px;
+            width: 200px;
+            border-radius: 30px 30px 1px 1px;
+            background-color: #faebd6;
+            color: #61413b;
+        }
+        .border ul{
+            margin-left: 40px;
+        }
+        .border ul a{
+            color: #be9879;
+        }
+        .leaf{
+            margin: 30px 20px;
+            color: #61413b;
+        }
+        .zero{
+            display: inline-block;
+        }
+        footer{
+            background-image: url(../Tuan5/360_F_573655671_jdqvJOvChqUvLICEeP6CHTl7xP9Q4P5d.jpg);
+            height: 50px;
+            width: 100%;
+            text-align: center;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <h1>AUTUMN TRAVEL COMPANY</h1>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="#">PRODUCTS</a></li>
+                <li><a href="#">SERVICE</a>
+                <ul>
+                    <li><a href="#"></a>Our Services</li>
+                    <li><a href="#">Third Party Services</a></li>
+                </ul>
+                </li>
+                <li><a href="#">ORDER</a></li>
+            </ul>
+        </nav>
+        <div class="content">
+            <div class="img">
+                <img src="../Tuan5/Untitled.png" alt="leaf">
+            </div>
+            <div class="left">
+                <h2 style="color:#817d04">Sign up for membership benefits</h4><br>
+                <p style="color:#817d04;margin-left: 40px;">Our philosophical values are transparency, respect. formality and respondsibility. Our stimulus is your enthusiasm. Our motto is your satisfaction.</p>
+                <br>
+                <input type="text" placeholder="Username">
+                <br>        
+                <input type="email" placeholder="E-mail">
+                <br>
+                <input type="password" placeholder="Password">
+                <br>
+                <input type="password" placeholder="Re-type Password">
+                <br>        
+                <button style="background-color: #817d04;color: #fff; padding: 10px;">SIGN ME UP</button>
+            </div>  
+            <div class="right">
+                <div class="border">
+                    <h3>Links</h3><br>
+                    <ul>
+                        <li><a href="#">Make your own tour</a></li>
+                        <li><a href="#">Maldive Tours</a></li>
+                        <li><a href="#">Nature & Adventure</a></li>
+                        <li><a href="#">Readymade Tours</a></li>
+                        <li><a href="#">Europe Tours</a></li>
+                        <li><a href="#">Russia Tours</a></li>
+                    </ul>
+                </div>
+                <div class="leaf">
+                    <h3>More info</h3>
+                    <img src="../Tuan5/leaf_noun_002_20848.jpg" alt="Mini-Leaf" height="50px" width="50px" style="float:left" id="zero">
+                    <p id="zero">Our purpose is the client who gives to us the opportunity to serve and to make known to the reality around the world</p>
+                </div>
+            </div>
+        </div>
+        <footer>
+            &copy; 2017 Software Engineering Department | Test Date: 16 Sept 2017
+        </footer>
+    </div>
+    
+</body>
+</html>
